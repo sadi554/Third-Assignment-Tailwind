@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,6 +18,14 @@
             crossorigin="anonymous"
         ></script>
 
+        <!-- DaisyUI -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <script src="https://cdn.tailwindcss.com"></script>
+
         <!-- Tailwind CSS -->
         <script src="https://cdn.tailwindcss.com"></script>
         <script>
@@ -34,7 +42,39 @@
     </head>
     <body>
         <!-- Header -->
-        <header></header>
+        <header class="bg-gradient-to-r from-[#FFFFFF] to-[#EFEBE3]">
+            <nav class="flex">
+                <div
+                    class="flex justify-between items-center mx-auto space-x-32 space-y-11"
+                >
+                    <div>
+                        <img
+                            class="mt-6"
+                            src="c2-assets/logo-header.png"
+                            alt=""
+                        />
+                    </div>
+                    <!--  nav text -->
+
+                    <div class="hidden lg:flex lg:gap-x-8">
+                        <a href="#" class="text-xl text-gray-900">Product</a>
+                        <a href="#" class="text-xl text-gray-900">Services</a>
+                        <a href="#" class="text-xl text-gray-900">Contact us</a>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+
+                        <button
+                            class="btn btn-outline rounded-lg border-green-500 w-28 h-11 text-black"
+                        >
+                            Login
+                        </button>
+                        <button class="btn btn-success w-36 h-11 text-white">
+                            Register
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
         <!-- Main -->
         <main></main>
