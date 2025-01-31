@@ -43,25 +43,26 @@
     <body>
         <!-- Header -->
         <header class="bg-gradient-to-r from-[#FFFFFF] to-[#EFEBE3]">
-            <nav class="flex">
-                <div
-                    class="flex justify-between items-center mx-auto space-x-32 space-y-11"
-                >
-                    <div>
+            <nav class="flex items-center justify-between p-6 lg:px-8 m-auto">
+                <div class="flex lg:flex-1 space-x-32 space-y-11">
+                    <div class="grid lg:max-w-5xl md:max-w-4xl sm:max-w-3xl">
                         <img
-                            class="mt-6"
+                            class="mt-6 ml-32"
                             src="c2-assets/logo-header.png"
                             alt=""
                         />
                     </div>
                     <!--  nav text -->
 
-                    <div class="hidden lg:flex lg:gap-x-8">
+                    <div class="hidden lg:flex lg:gap-x-8 gap-12">
                         <a href="#" class="text-xl text-gray-900">Product</a>
                         <a href="#" class="text-xl text-gray-900">Services</a>
                         <a href="#" class="text-xl text-gray-900">Contact us</a>
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <i class="fa-solid fa-cart-shopping"></i>
+
+                        <div class="pl-7 gap-10">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
 
                         <button
                             class="btn btn-outline rounded-lg border-green-500 w-28 h-11 text-black"
@@ -74,10 +75,150 @@
                     </div>
                 </div>
             </nav>
+
+            <!-- Hero Section -->
+
+            <div class="text-center justify-between">
+                <!-- text -->
+                <div>
+                    <h1
+                        class="lg:text-6xl md:text-6xl sm:text-6xl font-semibold pt-6 space-x-96 text-center"
+                    >
+                        Freshness
+                        <span class="text-green-500"
+                            >You Can <br />
+                            Count</span
+                        >
+                        On, Prices You'll Love!
+                    </h1>
+                    <br />
+                    <p class="lg:text-xl md:text-xl sm:text-xl">
+                        Shop your daily essentials at unbeatable prices. From
+                        fresh produce to pantry <br />staples, we’ve got you
+                        covered every day!
+                    </p>
+                    <br />
+                </div>
+                <!-- image -->
+                <div class="lg:max-w-5xl md:max-w-5xl sm:max-w-5xl mx-72">
+                    <img src="c2-assets/hero-vegetables.png" alt="" />
+                </div>
+            </div>
         </header>
 
         <!-- Main -->
-        <main></main>
+        <main>
+            <div>
+                <h1
+                    class="text-4xl font-semibold text-green-500 text-left mt-36 ml-36"
+                >
+                    Services
+                </h1>
+            </div>
+
+            <section class="flex justify-between gap-5 ml-36 mr-36 mt-14">
+                <!-- card 1 -->
+                <div
+                    class="bg-gradient-to-r from-white to-[#EFEBE3] shadow-md max-w-sm sm:max-w-md lg:max-w-lg mx-auto p-8 rounded-xl grid grid-rows-3 w-[424px] h-[367px]"
+                >
+                    <!-- Icon -->
+                    <div
+                        class="w-36 h-32 mx-auto flex items-center justify-center bg-white rounded-full"
+                    >
+                        <img
+                            src="c2-assets/service.png"
+                            alt="24/7 Icon"
+                            class="-w-20 h-28"
+                        />
+                    </div>
+                    <!-- Text -->
+                    <div>
+                        <h2
+                            class="font-bold text-2xl md:text-2xl lg:text-2xl mb-2 mt-10 text-center"
+                        >
+                            24/7 Services
+                        </h2>
+                        <br />
+                        <p
+                            class="text-gray-600 text-sm md:text-base lg:text-lg text-center"
+                        >
+                            Our expert, award-winning staff selects the products
+                            we cover and rigorously researches and tests our top
+                            picks.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- card 2 -->
+                <div
+                    class="bg-gradient-to-r from-white to-[#EFEBE3] shadow-md max-w-sm sm:max-w-md lg:max-w-lg mx-auto p-8 rounded-xl grid grid-rows-3 w-[424px] h-[367px]"
+                >
+                    <!-- Icon -->
+                    <div
+                        class="w-36 h-32 mx-auto flex items-center justify-center bg-white rounded-full"
+                    >
+                        <img
+                            class="w-16 md:w-20 lg:w-24 object-contain"
+                            src="c2-assets/delivery.png"
+                            alt="24/7 "
+                            class="-w-20 h-28"
+                        />
+                    </div>
+                    <!-- Text -->
+                    <div>
+                        <h2
+                            class="font-bold text-2xl md:text-2xl lg:text-2xl mb-2 mt-10 text-center"
+                        >
+                            Fast Delivery
+                        </h2>
+                        <br />
+                        <p
+                            class="text-gray-600 text-sm md:text-base lg:text-lg text-center"
+                        >
+                            Delivery partners arrive at the restaurant as soon
+                            as the food is ready. Contactless pickup options are
+                            often available for faster and safer handoffs.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- card 3 -->
+                <div
+                    class="bg-gradient-to-r from-white to-[#EFEBE3] shadow-md max-w-sm sm:max-w-md lg:max-w-lg mx-auto p-8 rounded-xl grid grid-rows-3 w-[424px] h-[367px]"
+                >
+                    <!-- Icon -->
+                    <div
+                        class="w-36 h-32 mx-auto flex items-center justify-center bg-white rounded-full"
+                    >
+                        <img
+                            class="w-16 md:w-20 lg:w-24 object-contain"
+                            src="c2-assets/healthy.png"
+                            alt="24/7 "
+                            class="-w-20 h-28"
+                        />
+                    </div>
+                    <!-- Text -->
+                    <div>
+                        <h2
+                            class="font-bold text-2xl md:text-2xl lg:text-2xl mb-2 mt-10 text-center"
+                        >
+                            Healthy Products
+                        </h2>
+                        <br />
+                        <p
+                            class="text-gray-600 text-sm md:text-base lg:text-lg text-center"
+                        >
+                            healthy products requires a targeted strategy to
+                            reach health-conscious consumers and effectively
+                            communicate the benefits of the products.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Popular Products -->
+            <section></section>
+        </main>
 
         <!-- footer -->
         <footer></footer>
